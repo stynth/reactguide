@@ -18,6 +18,10 @@ html {
   flex-direction: column;
   gap: 128px;
 }
+.props-row{
+  display: flex;
+  gap: 16px;
+}
 
 @media only screen and (max-width: 1000px) {
   .all-sections {
