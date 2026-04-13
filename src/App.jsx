@@ -4,7 +4,6 @@ import HeroBanner from "./components/HeroBanner/HeroBanner";
 import Card from "./components/Card/Card";
 import CodeBlock from "./components/CodeBlock/CodeBlock";
 import { chipComponentCode, chipUsageCode } from "./CodeSnippets";
-import(chipComponentCode, chipUsageCode) from "./CodeSnippets"
 
 function App() {
   return (
@@ -25,12 +24,13 @@ function App() {
                 <p>The data could be text to display, link to use, or even what action to take on click.</p>
               </Card>
             </div>
-            <Card>
+            <Card isRow>
               <CodeBlock
                 language="jsx"
                 title="Component internals"
                 code={chipComponentCode}
               />
+              <div className="vertical-line" />
               <CodeBlock
                 language="jsx"
                 title="Usage Example"

@@ -28,3 +28,17 @@
         font-size: 64;
     }
 }
+
+.card.row{
+    flex-direction: row;
+    gap: 16px;
+}
+
+
+
+
+
+
+
+
+

@@ -33,3 +33,9 @@ html {
     padding: 128px 8px;
   }
 }
+
+
+.vertical-line{
+  background-color: var(--card-stroke);
+  min-width: 1px;
+}
