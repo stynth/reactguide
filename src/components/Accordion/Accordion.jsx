@@ -1,5 +1,5 @@
 import "./Accordion.css"
-import Chevron from "../..assets/icons/ChevronUp.svg"
+import Chevron from "../../assets/icons/ChevronUp.svg"
 import { useState } from "react";
 
 export default function Accordion({ title, children }) {
