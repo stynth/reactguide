@@ -12,37 +12,61 @@ function App() {
       <main className="main-content">
         <HeroBanner />
         <div className="all-sections">
-          <section className="prop-section">
-            <div className="props-row">
-              <Card highlighted>
-                <h2>PROPS</h2>
-              </Card>
-              <Card>
-                <h2>Chips</h2>
-                <p>Props allow the components to accept information to use.</p>
-                <p>This is why not every component made from a template looks the same, they receive different data.</p>
-                <p>The data could be text to display, link to use, or even what action to take on click.</p>
-              </Card>
-            </div>
-            <Card isRow>
-              <CodeBlock
-                language="jsx"
-                title="Component internals"
-                code={chipComponentCode}
-              />
-              <div className="vertical-line" />
-              <CodeBlock
-                language="jsx"
-                title="Usage Example"
-                code={chipUsageCode}
-              />
-
-            </Card>
-          </section>
+          <PropsSection />
+          <StateSection />
         </div>
       </main>
     </>
   );
+}
+
+function PropsSection() {
+  return (
+    <section className="prop-section">
+      <div className="props-row">
+        <Card highlighted>
+          <h2>PROPS</h2>
+        </Card>
+        <Card>
+          <h2>Chips</h2>
+          <p>Props allow the components to accept information to use.</p>
+          <p>This is why not every component made from a template looks the same, they receive different data.</p>
+          <p>The data could be text to display, link to use, or even what action to take on click.</p>
+        </Card>
+      </div>
+      <Card isRow>
+        <CodeBlock
+          language="jsx"
+          title="Component internals"
+          code={chipComponentCode}
+        />
+        <div className="vertical-line" />
+        <CodeBlock
+          language="jsx"
+          title="Usage Example"
+          code={chipUsageCode}
+        />
+
+      </Card>
+    </section>
+  )
+}
+
+function StateSection() {
+  return (
+    <section className="prop-section">
+      <Card highlighted>
+        <h2>State</h2>
+        <p>State is similar to variable, with one key difference</p>
+        <p>When state changes, react will notice, and re-draw the part of the pag with the change</p>
+      </Card>
+
+      <Card tags={["test", "temp"]}>
+        stuff
+      </Card>
+
+    </section>
+  )
 }
 
 export default App;

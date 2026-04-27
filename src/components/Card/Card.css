@@ -25,13 +25,20 @@
 .card.highlighted{
     background-color: var(--secondary);
     > h2{
-        font-size: 64;
+        font-size: 64px;
     }
 }
 
 .card.row{
     flex-direction: row;
     gap: 16px;
+}
+
+.tags-row{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 
