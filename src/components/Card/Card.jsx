@@ -1,11 +1,7 @@
 import "./Card.css"
+import Chip from "../Chip/Chip";
 
 
-function Chip({text}){
-    return(
-        <h4>{text}</h4>
-    )
-}
 
 export default function Card({ highlighted = false, isRow = false, tags = [], children }) {
 
